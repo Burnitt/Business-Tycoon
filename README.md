@@ -1,7 +1,7 @@
 # Business-Tycoon
 Hello, you are a business owner and you have just started a business! You start off with a random amount of money, a building and a dream! Your job is to make sure that your business is running smoothly! Your main goal is to make your business big, profitable, and successful! You will have to make smart, financial decisions, and make sure that you are able to keep your business a float, Good luck!
 
-<--------------------------------------------------------------------------------------------------< Tutorial >------------------------------------------------------------------------------------------------------------>
+<------------------------------------------------------------< Tutorial >------------------------------------------------------------------------->
 
 Welcome to the tutorial! In this game, you will be able to make financial decisions to further increase the success of your business! You will also be able to make decisions to upgrade your buildings, and make sure that your business is running smoothly! Lets go through some of the possible misconceptions of the game, first lets address demand. Demand increases over time, and what demand represents is the amount of products that you sell every day, the higher demand, the more products you sell, the more products you sell, the more money you make. Next, whenever you buy a building, you are going to instantly 'view' that building, at the end of the day when you want to close your business, you can choose if you want to view that new building. To add, paying off a loan can only be done at the end of the month.\nNow Lets go through the different actions that you can perform. 
 
