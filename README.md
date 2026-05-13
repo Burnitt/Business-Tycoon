@@ -1,36 +1,116 @@
-# Business-Tycoon
-Hello, you are a business owner and you have just started a business! You start off with a random amount of money, a building and a dream! Your job is to make sure that your business is running smoothly! Your main goal is to make your business big, profitable, and successful! You will have to make smart, financial decisions, and make sure that you are able to keep your business a float, Good luck!
+# 🏢 Business Tycoon
 
-<-------------------------------------------------< Tutorial >------------------------------------------------------>
+A terminal-based business simulation game written in Java. You start with a random amount of capital, one building, and a goal: grow your business into a profitable empire by making smart financial decisions every day.
 
-Welcome to the tutorial! In this game, you will be able to make financial decisions to further increase the success of your business! You will also be able to make decisions to upgrade your buildings, and make sure that your business is running smoothly! Lets go through some of the possible misconceptions of the game, first lets address demand. Demand increases over time, and what demand represents is the amount of products that you sell every day, the higher demand, the more products you sell, the more products you sell, the more money you make. Next, whenever you buy a building, you are going to instantly 'view' that building, at the end of the day when you want to close your business, you can choose if you want to view that new building. To add, paying off a loan can only be done at the end of the month.\nNow Lets go through the different actions that you can perform. 
-
-#1 is simple, if your business inventory is low on inventory, you can purchase more inventory! 
-
-#2 is also simple, as the days go by, the shelves in your building slowly become empty as you sell your products! So you may want to restock your inventory.
-
-#3 is a bit more complicated, as you expand and grow your business, your expenses will increase! At the start of the game, you will start off will $1000 in expenses that you should pay off within the first month. 
-
-#4 is also a bit more complicated, if you want to expand your buildings, or purchase a new one, you can enter this option to do so! 
-
-#5 If you want to hire employees, then you can do so here, but keep in mind that it costs $2500 upfront and $3000 monthly, but you recieve more money in return over time. 
-
-#6 You have 4 different boosters that can help you with different things, but remember, the boosters wear off by the end of the day! 
-
-#7 If you want to see the current stats of the building that you are currently viewing, you can do so here! 
-
-#8 its simple, if you want to get a loan, you can get a loan, but keep in mind that at the end of the month, you should pay it off, as all expenses increase if you do not pay it off within the first month! To pay off a 
-loan, you need to pay off the 'total expenses' tab. 
-
-#9 If you want to recieve more money from your business revenue, you may want to close the business for the day, but as explained before there are downsides to doing this. 
-
-#10 If you want to exit the program. 
-
-#11 If you want to save and exit the program.
-
-<-----------------------------------------------< End of Tutorial >---------------------------------------------------->
-
-📌 Author
 ---
-Gurnit Chopra
 
+## 🎮 Gameplay Overview
+
+Each in-game day, you manage one or more buildings, track inventory and shelf stock, and make decisions that affect your bottom line. At the end of every month, expenses are tallied and you either pay up or face the consequences.
+
+**Core mechanics:**
+
+- **Demand system** — demand represents how many products you sell per day. It grows over time and with building upgrades.
+- **Inventory pipeline** — products live off-shelf in your warehouse until you restock. Empty shelves mean lost revenue.
+- **Monthly expenses** — unpaid expenses accumulate interest. Fall too far behind and the game is over.
+- **Leveling up** — hit cash, building, and upgrade thresholds to level up, unlock booster resets, and scale your operation.
+
+---
+
+## 🧠 Features
+
+- Save and load game progress via `saveGame.txt`
+- Up to 15 buildings, each with independent stats
+- 4 one-time-per-level efficiency boosters
+- Loan system with tiered interest rates
+- Employee hiring with upfront cost and monthly wages
+- Randomized market prices (buy/sell) each day
+- Text-based building visualization that updates with levels
+
+---
+
+## ⚡ Efficiency Boosters
+
+Each booster is usable once per level and expires at the end of the day:
+
+| Booster | Effect |
+|---|---|
+| **Profit Booster** | +25% of daily revenue added to cash |
+| **Expense Relief** | 25% discount on any expense payment |
+| **Building Incentive** | 25% cashback on new building purchases |
+| **Purchase Relief** | 25% cashback on inventory purchases |
+
+---
+
+## 📈 Level-Up Requirements
+
+| Level | Cash Required | Buildings | Building Level |
+|---|---|---|---|
+| 1 → 2 | $150,000 | 3 | 2 |
+| 2 → 3 | $400,000 | 6 | 4 |
+| 3 → 4 | $700,000 | 10 | 6 |
+| 4 → 5 | $1,000,000 | 15 | 8 |
+
+---
+
+## 🏦 Loan Options
+
+| Amount | Interest |
+|---|---|
+| $1,000 | 7% |
+| $2,500 | 6% |
+| $5,000 | 6% |
+| $10,000 | 5% |
+| $25,000 | 5% |
+| $50,000 | 4% |
+| $150,000 | 3% |
+| $300,000 | 2% |
+
+> Loans are added to your total expenses and must be paid off by end of month to avoid a 20% penalty on all expenses.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Java
+- **I/O:** `java.util.Scanner`, `java.io.BufferedReader`, `java.io.BufferedWriter`
+- **Persistence:** Flat-file save system (`saveGame.txt`)
+- **Structure:** Two-class OOP design (`Main.java`, `Business.java`)
+
+---
+
+## 🚀 Running the Game
+
+**Requirements:** JDK 8 or higher
+
+```bash
+# Compile
+javac Main.java Business.java
+
+# Run
+java Main
+```
+
+---
+
+## 📁 Project Structure
+```text
+Business-Tycoon/
+├── Main.java       # Game loop, state management, user input
+├── Business.java   # Game logic, file I/O, helper methods
+└── saveGame.txt    # Auto-generated on save
+
+---
+
+## ⚠️ Known Limitations
+
+- Terminal-only interface, no GUI
+- Save system stores a single slot
+- Building stats are tracked via parallel arrays (no OOP model per building)
+- No input validation on all edge cases
+
+---
+
+## 📌 Author
+
+**Gurnit Chopra**
