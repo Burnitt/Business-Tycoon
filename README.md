@@ -29,3 +29,8 @@ loan, you need to pay off the 'total expenses' tab.
 #11 If you want to save and exit the program.
 
 <-----------------------------------------------< End of Tutorial >---------------------------------------------------->
+
+📌 Author
+---
+Gurnit Chopra
+
